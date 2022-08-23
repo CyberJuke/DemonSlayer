@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url('Demon\ Slayer\ Wpp.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Menu*/
+
+.containerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #222;
+}
+
+.menuItem {
+    font-size: 2rem;
+    margin:30px;
+    color: #FFFFFF;
+    font-family:'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    color:rgb(251, 255, 0);
+
+}
+
+/*Descrição*/
+@media (max-width:1920px) {
+
+    #rengoku_div, #uzui_div, #enmu_div, #rui_div {
+        position: relative;
+        width: 50vw;
+        height: 70vh;
+    }
+
+    div.container1 {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        max-height: 20vw;
+        min-height: 10vw;
+        background-color: black;
+        margin-top: 40px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .rengokupng {
+        max-height: 20vw;
+        min-height: 10vw;
+        margin-left: 5vw;
+        float: left;
+    }
+
+    .container1 > p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2vw;
+        color:#FFFFFF;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    div#all_imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10vw;
+    }
+
+    .divs {
+        display: grid;
+        justify-items: center;
+    }
+
+    .titles {
+        position: absolute;
+        display: grid;
+        align-items: center;
+        font-family:arial;
+        font-size: 2vw;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 20vw;
+        min-width: 20vw;
+        max-height: 5vh;
+        min-height: 5vh;
+        border: 2px solid #222;
+        background-color: #222;
+        border-radius: 30px;
+        opacity: 80%;
+    }
+
+
+    .imgs {
+        position: absolute;
+        width: 30vw;
+        border: 10px solid black;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-right: 20px;
+        transform: translateX(-50%);
+        transition: width 1s;
+        transition-timing-function: ease;
+        box-shadow:
+            -10px -10px 1em rgba(1,1,1,0.6);
+    }
+
+    .imgs:hover {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 40%;
+    }
+
+    body {
+        background-image: url('Demon Slayer Wpp 768.png');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    div#all_imgs {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items:center;
+        margin-top: 30vw;
+        overflow-y: hidden;
+    }
+
+    .divs {
+        justify-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 10vw;
+        max-height: 60vw;
+    }
+
+    .titles {
+        display: grid;
+        align-items: center;
+        font-size: 4vw;
+        max-width: 50vw;
+        min-width: 50vw;
+    }
+
+    .imgs {
+        max-width: 50vw;
+        min-width: 50vw;
+        box-shadow: none;
+    }
+    
+    .menuItem {
+        font-size: 4vw;
+        padding: 40px;
+        margin:0;
+    }
+
+    .container1 > p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3vw;
+        color:#FFFFFF;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
